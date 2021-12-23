@@ -1,0 +1,49 @@
+<section class="ui container">
+  <table class="ui table">
+      <thead>
+        <tr>
+          <th> Date </th>
+          <th> Weight </th>
+          <th> Height </th>
+          <th> Hip Measurement </th>
+          <th> Waist Measurement </th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each week.readings}}
+      <tr>
+        <td>
+          {{date}}
+        </td>
+        <td>
+          {{weight}}
+        </td>
+        <td>
+          {{height}}
+        </td>
+        <td>
+          {{hipMeasurement}}
+        </td>
+        <td>
+          {{waistMeasurement}}
+        </td>
+        <td>
+          {{pressure}}
+        </td>
+         <td>
+          <a href="/reading/{{../week.id}}/editreading/{{id}}" class="ui icon button">
+            <i class="pencil alternate icon"></i>
+          </a>
+        </td>
+        <td>
+          <a href="/week/{{../week.id}}/deletereading/{{id}}" class="ui icon button">
+            <i class="icon trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+      </tbody>
+    </table>
+</section>

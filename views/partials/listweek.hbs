@@ -1,0 +1,11 @@
+{{#each weeks}}
+  <section class="ui stacked segment">
+    <h3 class="ui header">{{title}}</h3>
+    <a href="/week/{{id}}" class="ui icon button">
+      <i class="icon folder open"></i>
+    </a>
+    <a href="/dashboard/deleteweek/{{id}}" class="ui icon button">
+      <i class="icon trash"></i>
+    </a>
+  </section>
+{{/each}}
