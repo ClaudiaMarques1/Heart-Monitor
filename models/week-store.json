@@ -1,0 +1,35 @@
+{
+  "weekCollection": [
+    {
+      "id": "1767b160-6422-11ec-9daa-e38d8a30b93f",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Week 1",
+      "date": "23.12.2021",
+      "readings": [
+        {
+          "id": "064167c0-6425-11ec-8997-c3938edea418",
+          "date": "23/12/2021",
+          "weight": "63",
+          "height": "156",
+          "hipMeasurement": "83",
+          "waistMeasurement": "82"
+        },
+        {
+          "id": "147c49e0-6425-11ec-8997-c3938edea418",
+          "date": "23/12/2021",
+          "weight": "42",
+          "height": "122",
+          "hipMeasurement": "62",
+          "waistMeasurement": "61"
+        }
+      ]
+    },
+    {
+      "id": "2db46f50-6425-11ec-8997-c3938edea418",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Week 2",
+      "date": "23/12/2021",
+      "readings": []
+    }
+  ]
+}

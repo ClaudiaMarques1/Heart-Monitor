@@ -1,0 +1,53 @@
+<head class="ui menu">
+    <div class="ui sidebar inverted vertical menu">
+      <a class="active item">Home</a>
+      <a class="item">Camera</a>
+      <a class="item">About the Application</a>
+      <a id="logout" class="item" href="/logout">Login Out</a>
+    </div>
+  <div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment">
+    <div class="ui container">
+        <h2 class="ui center aligned icon header">
+          <i class="red heartbeat icon"></i>
+          <a class="ui inverted header" href="/"> Beat a Minute! </a>
+        </h2>
+      <div class="ui large secondary inverted pointing menu">
+              <button class="ui inverted left floated red basic button">
+              <i class="sidebar icon"></i>
+                Menu
+            </button>
+        <div class="ui fluid three item menu">
+            <a id="dashboard" class="item" href="/dashboard"> Measurement Dashboard  </a>
+            <a id="monitor" class="item" href="/monitor"> Heart Monitor  </a>
+            <a id="about" class="item" href="/about"> About </a>
+          </div>
+              <div class="ui category search item">
+              <div class="ui inverted transparent icon input">
+                    <input class="prompt" type="text" placeholder="Search here...">
+                    <i class="search link icon"></i>
+                  </div>
+                  <div class="results"></div>
+                </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</head>
+     
+<script>
+  $("#{{id}}").addClass("active item");
+</script>
+
+<script>  
+  $('.ui.sidebar')
+  .sidebar('setting', 'transition', 'overlay')
+  .sidebar('toggle')
+;
+$('.left.ui.sidebar').first()
+  .sidebar('attach events', '.ui.button', 'show')
+;
+$('.ui.button')
+  .removeClass('disabled')
+;
+</script>

@@ -1,0 +1,54 @@
+<div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Sitemap</a>
+            <a href="#" class="item">Contact Us</a>
+            <a href="#" class="item">Dashboard</a>
+            <a href="#" class="item">About</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Services</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Application Information</a>
+            <a href="#" class="item">FAQ</a>
+            <a href="#" class="item">How To Access</a>
+            <a href="#" class="item">Home</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Footer Header</h4>
+          <p>Thia application is suppose to monitor your heart rate when you put your finger steady on the sensor.</p>
+        <div class="ui heart rating" data-rating="1" data-max-rating="4"></div>
+        </div>
+      </div>
+<div class="ui inverted section divider"></div>
+<i class="red heartbeat icon"></i>
+<div class="ui horizontal inverted small divided link list">
+  <a class="item" href="#">Site Map</a>
+  <a class="item" href="#">Contact Us</a>
+  <a class="item" href="#">Terms and Conditions</a>
+  <a class="item" href="#">Privacy Policy</a>
+</div>
+  </div>
+      </div>
+
+<script>  
+$('.toggle.example .rating')
+  .rating({
+    initialRating: 2,
+    maxRating: 4
+  })
+;  
+
+$('.toggle.example .rating')
+  .rating('enable')
+;
+
+$('.clearing.example .rating')
+  .rating('setting', 'clearable', true)
+;
+</script>

@@ -1,0 +1,21 @@
+{{> welcomemenu id='login' }}
+
+<div class="ui horizontal segments">
+  <div class="ui very padded segment">
+    <img class="ui middle aligned Medium image" src="https://cdn.glitch.me/6d43959c-0b3b-4c1b-a6fb-e0220e771f91/Heart_Rate.jpg?v=1640259743308">
+  </div>
+  <div class="ui very padded segment">
+      <form class="ui segment form" action="/authenticate" method="POST">
+        <h3 class="ui header">Log-in</h3>
+        <div class="field">
+          <label>Email</label> <input placeholder="Email" name="email">
+        </div>
+        <div class="field">
+          <label>Password</label> <input type="password"  name="password">
+        </div>
+        <button class="ui blue submit button">Login</button>
+      </form>
+  </div>
+</div>
+
+{{> footer }}

@@ -1,0 +1,28 @@
+<section class="ui container">
+<form class="ui stacked segment form" action="/week/{{week.id}}/addreading" method="POST">
+  <div class="five fields">
+    <div class="field">
+      <label>Date</label>
+      <input placeholder="0000-00-00 00:00:00" type="text" name="date">
+    </div>
+    <div class="field">
+      <label> Weight </label>
+      <input placeholder="00" type="text" name="weight">
+    </div>
+    <div class="field">
+      <label> Height </label>
+      <input placeholder="00" type="text" name="height">
+    </div>
+    <div class="field">
+      <label> Hip Measurement </label>
+      <input placeholder="00" type="text" name="hipMeasurement">
+    </div>
+    <div class="field">
+      <label> Waist Measurement </label>
+      <input placeholder="00" type="text" name="waistMeasurement">
+    </div>
+  </div>
+  <button class="ui blue submit button"> Submit Reading </button>
+</form>
+</section>
+{{> footer }}
